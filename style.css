@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('insight\ image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0, 2px, 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    /*overflow: hidden;*/
+    max-width: 100%;
+}
+.header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+}
+.header h2 {
+    margin: 0;
+}
+.form {
+    padding: 30px 50px;
+}
+.form-control {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.form-control, label {
+    display: inline-block;
+    /*margin-bottom: 5px;*/
+
+}
+.form-control, input {
+   /* border: 2px solid #f0f0f0;*/
+    border-radius: 4px;
+    display:block;
+    font-size: 14px bold ;
+    font-family: inherit;
+    padding: 10px;
+    /*border-color: brown;*/
+    width: 300px;
+}
+.form-control.success input {
+    border-color: #2ecc71;
+
+}
+.form-control.error input {
+    border-color: #e74c3c;
+}
+.form-control i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+} 
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+} 
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+select {
+    width: 300px;
+    border: 2px solid gray;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    display:block;
+    font-size: 14px bold ;
+    font-family: inherit;
+}
+
+.button {
+    background-color: brown;
+    border: 2px solid;
+    color: white;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    width: 150px;
+    /*margin-top: 16px;*/
+    margin: 1rem auto;
+    align-items: center;
+
+}
+@media screen and (max-width:768px){
+    .container{
+        border-radius: 15px;
+        width: 300px;
+    }
+    h1{
+        font-size: 1.5rem!important;
+        text-align: center;
+    }
+    .form{
+        padding: 15px 30px;
+    }
+    .form-control,input{
+        display: block;
+        font-size: 12px;
+        padding: 10px;
+        width: 100%;
+    }
+    select {
+        width: 100%;
+        padding: 10px;
+    }
+}
